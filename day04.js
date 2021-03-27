@@ -18,12 +18,14 @@ Now find one that starts with six zeroes.
 Your puzzle answer was 9962624.
 */
 
+
+const fs = require("fs");
 const md5 = require("md5");
 
-const SECRET_KEY = "yzbqklnj";
+const SECRET_KEY = fs.readFileSync('inputs/day04.txt', 'utf8');
 
 // Pt. 1
-// const LEADING_ZEROS = "00000";
+const LEADING_ZEROS = "00000";
 // Pt. 2
 // const LEADING_ZEROS = "000000";
 
